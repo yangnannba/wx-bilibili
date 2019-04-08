@@ -1,0 +1,4 @@
+<view class="mytop">
+  <image class="logo" src="../../images/logo.png"></image>
+  <text class="down">下载</text>
+</view>

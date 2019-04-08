@@ -1,0 +1,33 @@
+<view class="main">
+    <mytop></mytop>
+    <scroll-view  scroll-x class="mynav-scroll" >
+       <view bindtap="myactive" wx:for="{{mynavlist}}" wx:key="item.id" class="mynav-item {{item.id==myid ? 'my-on' : '' }}"  data-id="{{item.id}}">{{item.text}}</view>
+    </scroll-view>
+
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular
+    >
+      <block wx:for="{{imgUrls}}" wx:key="item.imgSrc">
+        <swiper-item class="swiper-item">
+          <image src="{{item.imgSrc}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+      <view class="indexlist">
+        <navigator url="../detail/detail?id={{item.id}}"  wx:for="{{indexlist}}" wx:key="{{item.id}}"  class="indexlist-item">
+          <view class="indexlist-item-re">
+              <image src="{{item.imgSrc}}" ></image>
+              <view class="indexlist-item-ab"><text>播放：{{item.playCount}}</text><text>评论：{{item.commentCount}}</text></view>
+          </view>
+          <view class="indexlist-item-desc">{{item.desc}}</view>
+        
+        
+        </navigator>
+      </view>
+
+</view>

@@ -1,0 +1,4 @@
+/**app.wxss**/
+.main{
+  padding:20rpx;
+}

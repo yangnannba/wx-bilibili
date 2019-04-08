@@ -1,0 +1,18 @@
+/* components/mytop.wxss */
+.mytop{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 20rpx;
+
+}
+.logo{
+  width:146rpx;
+  height:64rpx;
+}
+.down{
+  background-color: #fa729a;
+  color:#fff;
+  border-radius:8rpx;
+  padding:8rpx 16rpx;
+  font-size:28rpx;
+}

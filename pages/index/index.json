@@ -1,0 +1,6 @@
+{
+
+    "usingComponents": {
+      "mytop": "../../components/mytop/mytop"
+    }
+}

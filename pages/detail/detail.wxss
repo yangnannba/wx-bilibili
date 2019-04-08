@@ -1,0 +1,83 @@
+video{
+  width:100%;
+}
+.detail{
+  font-size: 28rpx;
+  color: #888;
+}
+.othersList-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom:16rpx;
+}
+.othersList-left{
+  width:30%;
+}
+.othersList-left image{
+  width:100%;
+  height:160rpx;
+  display: block;
+  border-radius:6rpx;
+}
+.othersList-item-desc{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  width:68%;
+
+}
+.desc-title{
+  font-size: 32rpx;
+}
+.desc-playMsg{
+  font-size:28rpx;
+  color:#666;
+}
+.comment{
+  margin-top:20rpx;
+}
+.comment-h{
+  font-size: 32rpx;
+  font-weight: bold;
+  background: #999;
+  line-height: 2em;
+  padding:0 10rpx;
+  margin-bottom:20rpx;
+}
+.comment-h text{
+  float:right;
+  font-size: 24rpx;
+  color:#666;
+}
+.commentList{
+  margin-bottom:16rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx dashed #ccc;
+  padding-bottom:16rpx;
+
+}
+.userIconSrc{
+  width:18%;
+}
+.userIconSrc image{
+  width:100%;
+  height:120rpx;
+  border-radius: 50%;
+}
+.nameInfo{
+  display: flex;
+  flex-direction: column;
+  width:80%;
+  font-size: 32rpx;
+}
+.commentInfo{
+  margin-top:8rpx;
+  font-size: 28rpx;
+  color:#666;
+}
+.commentDate{
+  font-size: 22rpx;
+  color:#999;
+}

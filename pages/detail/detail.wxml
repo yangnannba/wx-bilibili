@@ -1,0 +1,33 @@
+<view class="main">
+    <view class="detail">
+        <video src="{{detail.videoSrc}}" controls ></video>
+        <view>{{detail.videoTitle}}</view>
+        <view>作者：{{detail.author}}</view>
+        <view>点击数：{{detail.playCount}}</view>
+        <view>评论：{{detail.commentCount}}</view>
+        <view>时间：{{detail.date}}</view>
+    </view>
+        <view  wx:for="{{othersList}}" wx:key="item.imgSrc"  class="othersList-item">
+          <view class="othersList-left">
+              <image src="{{item.imgSrc}}" ></image>
+          </view>
+          <view class="othersList-item-desc">
+          <text class="desc-title">{{item.title}}</text>
+          <text class="desc-playMsg">点击： {{item.playMsg}}</text>
+          </view>
+        
+        
+        </view>   
+
+        <view class='comment'>
+          <view class="comment-h">评论<text>数量：{{commentData.commentTotalCount}}</text></view>
+          <view wx:for="{{commentData.commentList}}" class="commentList" wx:key="item.userIconSrc">
+             <view class="userIconSrc"><image src="{{item.userIconSrc}}"></image></view>
+             <view class='nameInfo'>
+               <text>{{item.username}} <text class="commentDate"> ({{item.commentDate}})</text></text>
+               <text class="commentInfo">{{item.commentInfo}}</text>
+             </view>
+          </view>
+          
+        </view> 
+</view>

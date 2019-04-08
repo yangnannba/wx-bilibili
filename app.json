@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fa729a",
+    "navigationBarTitleText": "仿哔哩哔哩",
+    "navigationBarTextStyle":"white"
+  }
+}
